@@ -35,6 +35,7 @@ const TYPE_META = {
   architectural_req: { icon: 'business-outline',            label: 'Arch.'    },
   beo_pending:       { icon: 'restaurant-outline',          label: 'Catering' },
   dock_cart_new:     { icon: 'qr-code-outline',             label: 'Dock'     },
+  dock_cart_stuck:   { icon: 'cart-outline',                label: 'Dock Cart'},
   system:            { icon: 'pulse-outline',               label: 'System'   },
 };
 
