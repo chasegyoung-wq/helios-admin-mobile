@@ -6,20 +6,16 @@ import { colors } from '../../lib/theme';
 
 const ICONS = {
   dashboard: 'grid-outline',
-  today:     'today-outline',
   feedback:  'chatbubbles-outline',
   billing:   'card-outline',
-  orders:    'receipt-outline',
   alerts:    'notifications-outline',
   more:      'ellipsis-horizontal-circle-outline',
 };
 
 const LABELS = {
   dashboard: 'Dashboard',
-  today:     'Today',
   feedback:  'Feedback',
   billing:   'Billing',
-  orders:    'Orders',
   alerts:    'Alerts',
   more:      'More',
 };
@@ -53,11 +49,6 @@ export default function TabsLayout() {
         href: visible.includes('dashboard') ? '/(tabs)/dashboard' : null,
         tabBarIcon: ({ color, size }) => <TabIcon name="dashboard" color={color} size={size} />,
       }} />
-      <Tabs.Screen name="today" options={{
-        title: LABELS.today,
-        href: visible.includes('today') ? '/(tabs)/today' : null,
-        tabBarIcon: ({ color, size }) => <TabIcon name="today" color={color} size={size} />,
-      }} />
       <Tabs.Screen name="feedback" options={{
         title: LABELS.feedback,
         href: visible.includes('feedback') ? '/(tabs)/feedback' : null,
@@ -67,11 +58,6 @@ export default function TabsLayout() {
         title: LABELS.billing,
         href: visible.includes('billing') ? '/(tabs)/billing' : null,
         tabBarIcon: ({ color, size }) => <TabIcon name="billing" color={color} size={size} />,
-      }} />
-      <Tabs.Screen name="orders" options={{
-        title: LABELS.orders,
-        href: visible.includes('orders') ? '/(tabs)/orders' : null,
-        tabBarIcon: ({ color, size }) => <TabIcon name="orders" color={color} size={size} />,
       }} />
       <Tabs.Screen name="alerts" options={{
         title: LABELS.alerts,
